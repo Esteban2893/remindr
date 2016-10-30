@@ -1,6 +1,6 @@
-# remindr-api
+# remindr
 
-This is the project that manages the data for the `remindr` application.
+This is a full-stack web project as the solution of the `remindr` application.
 
 ## Database layout
 
