@@ -14,7 +14,7 @@ class CreateClassEventTable extends Migration
             $table->integer('class_id')->unsigned();
             $table->integer('event_id')->unsigned();
 
-            $table->foreign('class_id')->references('id')->on('class');
+            $table->foreign('class_id')->references('id')->on('classes');
             $table->foreign('event_id')->references('id')->on('events');
         });
     }

@@ -16,7 +16,7 @@ class CreateClassUserTable extends Migration
 
             $table->json('table')->nullable();
 
-            $table->foreign('class_id')->references('id')->on('class');
+            $table->foreign('class_id')->references('id')->on('classes');
             $table->foreign('user_id')->references('id')->on('users');
         });
     }
