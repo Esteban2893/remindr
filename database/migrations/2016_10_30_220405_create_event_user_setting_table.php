@@ -15,6 +15,7 @@ class CreateEventUserSettingTable extends Migration
             $table->integer('event_id')->unsigned();
 
             $table->double('alert_before', 15, 2);
+            $table->boolean('dont_alert')->default(false);
 
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('event_id')->references('id')->on('events');
